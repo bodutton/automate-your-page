@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<head><!-- <head> element contains information invisible on the page. -->
+  <title>Bo's Notes</title> <!-- Every tag has an opening and a closing tag.-->
+  <link rel="stylesheet" type="text/css" href="notesstyle.css"> <!-- link to CSS -->
+</head> <!-- head closer -->
+<body> <!-- body opener, contains everything from top to bottom -->
+  <div class="banner"> <!-- banner opener, contains banner image -->
+       <img src="http://i304.photobucket.com/albums/nn167/BoDutton/eyesbanner_zpsh7ahpgq8.jpg"  alt=" photobanner_zpsh7ahpgq8.jpg"/> <!-- banner image -->
+     </div> <!-- banner closer -->
+  <h1> Intro to Programming Nanodegree Notes</h1> <!-- page title -->
+  <h2>Contents</h2> <!-- table of contents title -->
+  <div class="flex-container"> <!-- flex container opener -->
+     <div class="flex-item-1"> <!-- flex item 1 opener -->
+       <a href="#unit1"> <!-- link to stage 1 unit 1 -->
+              
+               <h3>Stage 1 Unit 1: <br> Basics of the Web and HTML</h3> 
+                   <ul> 
+                      <li>How the Web Works</li> <li>HTML</li>
+                      <li>Tags and Elements</li>
+                      <li>List of Beginner's Tags</li>
+                      <li>!DOCTYPE HTML</li>
+                  </ul> 
+             </div> <!-- flex item 1 closer -->
+           </a> <!-- link to unit 1 closer -->
+     <div class="flex-item-2"> <!-- flex item 2 opener -->
+                <a href="#unit2"> <!-- link to stage 1 unit 2 -->
+                  <h3>Stage 1 Unit 2:<br> HTML Structure</h3> 
+                     <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Developer Tools</li>
+                        <li>Trees of Squares</li>
+                        <li>The DOM</li>
+                    </ul>
+                </a> <!-- link to stage 1 unit 2 closer -->
+             </div> <!-- flex item 2 closer -->
+     <div class="flex-item-3"> <!-- flex item 3 opener -->
+                  <a href="#unit3"> <!-- link to stage 1 unit 3 -->
+                   <h3>Stage 1 Unit 3:<br> Adding Style with CSS</h3>
+                      <ul>
+                        <li>What is CSS?</li>
+                        <li>Syntax and Rules</li>
+                        <li>Avoiding Repitition</li>
+                    </ul>
+                    </a> <!-- link to stage 1 unit 3 closer -->
+             </div> <!-- flex item 3 closer -->
+     <div class="flex-item-4">  <!-- flex item 4 opener -->
+               <a href="#unit21"> <!-- link to stage 2 unit 1 opener -->
+               <h3>Stage 2 Unit 1: <br> Telling Computers What To Do</h3>
+                   <ul>
+                      <li>Computers and Programming</li>
+                      <li>Python: Grammar and Expressions</li>
+                   </ul>
+               </a> <!-- link to stage 2 unit 1 closer -->
+             </div> <!-- flex item 4 closer -->
+     <div class="flex-item-5"> <!-- flex item 5 opener -->
+               <a href="#unit22"> <!-- link to stage 2 unit 2 opener -->
+               <h3>Stage 2 Unit 2: <br>Variables in Python</h3>
+                   <ul>
+                      <li>What is a Variable?</li>
+                      <li>Assigning a Variable</li>
+                      <li>Numbers and Quotations</li>
+                   </ul>
+               </a> <!-- link to stage 2 unit 2 closer -->
+             </div> <!-- flex item 5 closer -->
+     <div class="flex-item-6"> <!-- flex item 6 opener -->
+               <a href="#unit23"> <!-- link to stage 2 unit 3 opener -->
+               <h3>Stage 2 Unit 3: <br>Functions in Python</h3>
+                   <ul>
+                      <li>What is a Function?</li>
+                      <li>Making vs Using</li>
+                      <li>Importance of Functions</li>
+                      <li>Anatomy of a Function Definition</li>
+                     <li>Decision and Repitition: If and While Statements</li>
+                   </ul>
+               </a> <!-- link to stage 2 unit 3 closer -->
+             </div> <!-- flex item 6 closer -->
+         <div class="flex-item-7"> <!-- flex item 7 opener -->
+               <a href="#unit24"> <!-- link to stage 2 unit 4 opener -->
+               <h3>Stage 2 Unit 4: <br> Structured Data: Lists and For Loops</h3>
+                   <ul>
+                      <li>Strings vs Lists</li>
+                      <li>Nested Lists</li>
+                      <li>Mutation and Aliasing</li>
+                      <li>Plus vs Append</li>
+                      <li>Length (len)</li>
+                      <li>For Loops</li>
+                      <li>Indexing</li>
+                   </ul>
+               </a> <!-- link to stage 2 unit 4 closer -->
+             </div> <!-- flex item 7 closer -->
+     </div> <!-- flex container closer -->          
+  <div class="stage1"> <!-- stage 1 opener -->
+          <div class="stage1unit1"> <!-- stage 1 unit 1 opener -->
+             <a id="unit1"></a> <!-- stage 1 unit 1 link destination -->
+       <div class="stage1unit1lesson1"> <!-- stage 1 unit 1 lesson 1 opener -->
+        <h2>Stage 1 Unit 1: Basics of the Web and HTML</h2> 
+         <div class="lesson-title"><h3>How the Web Works</h3></div>
+            <div class="lesson-contents"> <!-- unit text opener -->
+                <p> The Web, or <em>internet</em>, is a global network of  
+                    computers that connects billions of users worldwide. 
+                    Invented in the 90s, the Web has grown to host over 30 billion pages. The vast majority of the Web is made up of inter-linked hypertext documents written in a language called <b>Hypertext Markup Language</b>, or <b>HTML.</b> When you visit a website (www.example.com) you're actually sending an <em>HTTP request</em> from your computer to a <em>server</em> who in turn finds the appropriate HTML document and sends it back to your computer where your <em>web browser</em> interprets and displays it. 
+                    <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496">This video</a>
+                    does a good job of explaining more.
+               </p>
+           </div> <!-- lesson contents closer -->
+           <br></div><!-- stage 1 unit 1 lesson 1 closer -->
+       <div class="stage1unit1lesson2"> <!-- stage 1 unit 1 lesson 2 opener -->
+         <div class="lesson-title"><h3>HTML</h3></div>
+           <div class="lesson-contents"
+                <p>
+                   HTML <em>Hypertext Markup Language</em> makes up most of the content on the web. HTML dictates <b>Text Content</b>, what you <em>see</em>, <b>Markup</b>,what it looks like <em>behind the scenes</em> <b>References</b> to other documents, <em>images and videos</em> <b>Links</b> to other pages in the form of <em>hyperlinks</em>.
+                   <br>Plain text equals plain text, <b><em>markups</em></b> do everything else.
+                   <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48724340">This
+                   video</a> gives a good overview.
+                </p>
+           </div>
+       <br></div> <!-- stage 1 unit 1 lesson 2 closer -->
+       <div class="stage1unit1lesson3"> <!-- stage 1 unit 1 lesson 4 opener -->
+         <div class="lesson-title"><h3>Tags and Elements</h3></div>
+            <div class="lesson-content">
+                <p>
+                  HTML is written in sentences or <em>elements</em> composed of <em>tags </em>and text. <b>Tags</b> are the markers that tell the text or source how to act or look.<br>
+                  <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444">This video</a> explains the
+                  distinction well.<br>
+                  There's a tag for anything you want to accomplish just a quick google search away. All tags fall into one of two categories based on how they interact with the page, <em>inline or block.</em> 
+               </p>
+            </div>
+       <br></div> <!-- stage 1 unit 1 lesson 3 closer -->
+       <div class="stage1unit1lesson4"> <!-- stage 1 unit 1 lesson 4 opener -->
+         <div class="lesson-title"><h3>List of Beginner's Tags</h3></div>
+           <div class="lesson-content">
+                  <b>Beginners Tags:</b><br>
+                   <ul><b>Inline</b>
+                       
+                           <li>&#60;b&#62;= Bold</li>
+                           <li>&#60;em&#62;= Italics</li>
+                           <li>&#60;a&#62;= Anchor (add hyperlinks, needs attribute like href)</li>
+                           <li>&#60;img&#62;= Image (no closing tag, needs source and alt text)</li>
+                           <li>&#60;br&#62;= Line Break (no closing tag)</li>
+                           <li>&#60;q&#62;= Short Quotation</li>
+                           <li>&#60;strong&#62;= Defines Important Text</li><br>
+                        
+                     
+                     <b>Block</b>
+                        
+                           <li>&#60;p&#62;= Paragraph (can give heigth and width)</li>
+                           <li>&#60;body&#62;= Body</li>
+                           <li>&#60;form&#62;= User Input Field</li>
+                        
+                   </ul>           
+            </div>
+       <br></div> <!-- stage 1 unit 1 lesson 4 closer --> 
+       <div class="stage1unit1lesson5"> <!-- stage 1 unit 1 lesson 5 opener --> 
+         <div class="lesson-title"><h3>!DOCTYPE HTML</h3></div>
+           <div class="lesson-contents">
+                
+                  <b>Simple HTML Document Structure:</b>
+                     <ul>
+                        <li>Doctype Tag -&#60;!doctype html&#62;</li>
+                        <li>HTML opening tag -&#60;html&#62;</li>
+                        <li>head opening tag -&#60;head&#62;</li>
+                        <li>title -&#60;title&#62;TITLE!&#60;/title&#62;</li>
+                        <li>/head closing tag -&#60;/head&#62;</li>
+                        <li>body opening tag -&#60;body&#62;</li>
+                        <li>majority of content -&#60;b&#62;content&#60;/b&#62;</li>
+                        <li>body closing tag -&#60;/body&#62;</li>
+                        <li>/HTML closing tag -&#60;/html&#62;</li>
+                     </ul>
+         </div>
+           </div> <!-- stage 1 unit 1 lesson 5 closer -->  
+       <br></div> <!-- stage 1 unit 1 closer -->
+          <div class="stage1unit2"> <!-- stage 1 unit 2 opener -->
+           <a id="unit2"></a> <!-- stage 1 unit 2 link destination -->
+             <h2>Stage 1 Unit 2: HTML Structure</h2>
+           <div class="stage1unit2lesson1"> <!-- stage 1 unit 2 lesson 1 opener -->
+         <div class="lesson-title"><h3>HTML</h3></div>
+            <div class="lesson-contents">
+              <p>
+                We already know that HTML is the standard markup language used to create web pages. HTML provides the structure and the content for the pages we see on the web. It's its own language with syntax and rules. Each document or page is made up of lines of code called elements marked with tags explaining what it's supposed to do. <br>
+                Think of a website as a house. Think about the structure, the wood beams holding it all up. Think about and layout of the house, where all the rooms are and how many bathrooms it has. Think about the wiring and plumbing. Thats HTML. 
+               </p>
+           </div>
+       <br></div> <!-- stage 1 unit 2 lesson 1 closer -->
+           <div class="stage1unit2lesson2"> <!-- stage 1 unit 2 lesson 2 opener -->
+             <div class="concept-title"><h3>CSS</h3></div>
+             <div class="concept-description">
+              <p>
+                If HTML is the structure of the house, <b>CSS</b> is the style and decoration. Type of furniture, color of bedrooms, wall hangings, etc. CSS stands for <em>Cascading Style Sheets</em> and it's used for describing the look and formatting of a document written in a markup language. Uses it's own language and syntax to alter font size and color, background position, etc. <br>
+                CSS gives programmers a way to control the style of related HTML elements. You can dictate commands like "make all class='concept-title' a certain color and size" and manage the look and style of your website. 
+               </p>
+           </div>
+       <br></div> <!-- stage 1 unit 2 lesson 2 closer -->
+             <div class="stage1unit2lesson3"> <!-- stage 1 unit 1 lesson 3 opener -->
+             <div class="lesson-title"><h3>Developer Tools</h3></div>
+           <div class="lesson-content">
+             <p>
+               The Developer Tools in Google Chrome give us great insight into how a page is structured and provides us not only with detailed information about how a web page is structured, styled, etc. but also empowers us with the ability to alter it. We can add/delete lines of code, adjust pixel ratios, colors, text, images. We can move the existing panes around. It turns any website into a sandbox. 
+             </p>
+             <p>
+               To access Developer Tools: Google Chrome > Any website > Customization Tap (square with 3 bars in the top right-hand corner) > More Tools > Developer Tools<br> OR <br> Right Click any link or image > Inspect Element 
+             </p>
+             <p>
+                HTML elements are either <em>inline</em> or <em>block</em>. Block elements form an "invisible box" around the content inside of them. 
+             </p>
+           </div>
+           <br></div> <!-- stage 1 unit 2 lesson 3 closer -->
+           <div class="stage1unit2lesson4"> <!-- stage 1 unit 2 lesson 4 opener -->
+            <div class="concept title"><h3>Trees of Squares</h3></div>
+          <div class="concept description">
+            <p>
+              There are two things to remember right off the bat that will make evertything easier. <br>
+              <b>Rule #1:</b> <em>Every things is a box.</em>Every element of a website is a box and often it's contained within another box. This is accomplished by putting elements inside of eachother in the code. Like you're placing your ships before a game of Battleship, you can place different elements around the page using the grid of pixels to arrange and line them up.<br>
+              <b>Rule #2:</b> <em>The structure of any website will resemble a big branch</em> growing directly out away from the trunk of the tree. Every website is designed in a branching series of boxes  that unfold like nesting dolls from biggest to smallest. <br>
+              <a href="https://youtu.be/y5NbZSvn5N8">This video</a> explains it perfectly. 
+            </p>
+          </div>
+          <br></div> <!-- stage 1 unit 2 lesson 4 closer -->
+           <div class="stage1unit2lesson5"> <!-- stage 1 unit 2 lesson 4 closer -->
+            <div class="concept title"><h3>THE DOM</h3></div>
+          <div class="concept description">
+            <p>
+              The Document Object Model, more commonly known as <b>DOM</b>, is a cross platform and language independant convention for representing and interacting with objects in HTML and other markup languages. The nodes of every structure are organized in a tree-like structure called the <b>DOM TREE</b> 
+              <a href="https://youtu.be/Nj5RCaE_b00">Here's a great</a> on breaking down a website and turning it into a DOM Tree. 
+            </p>
+          </div>
+          <br></div> <!-- stage 1 unit 2 lesson 5 closer -->
+           </div> <!-- stage 1 unit 2 closer -->
+          <div class="stage1unit3"> <!-- stage 1 unit 3 opener -->
+       <a id="unit3"></a>
+       <h2>Stage 1 Unit 3: Adding Style with CSS</h2>
+        <div class="concept-title"><h3>What is CSS?</h3></div>
+            <div class="concept-description">CSS, or <em>Cascading Style Sheets</em>, is code written to control the style of HTML elements. Think of it as the decorations or the style of your house.
+            </div><br>
+        <div class="concept title"><h3>Syntax and Rules</h3></div>
+            <div class="concept description">In CSS you will first write a selector that defines what elements of the page a particular style will apply to. Choose one HTML tag or class and alter the behavior of all matching tags on the page. If, for example, you wanted to alter all of the text in div class="units" you would type "div.units {and fill in your commands here}" All phrases are written as follows {attribute:value;} Eveything tagged as a "unit" will now act the same way. To refer to a "class" just add a period and the class name (ex. class=footer becomes .footer{:;})
+            </div><br>
+        <div class="concept title"><h3>Avoiding Repitition</h3></div>
+            <div class="concept description">Avoiding Repitition is essential in writing good code for a myraid of reasons. Here are three:<br>
+              <br><b>Avoiding Errors</b>-An automated system is far less likely to fail. Most mistakes are due to human error, remove it.<br>
+              <br><b>Consistency</b>-By working from generic rules down to specifics, the chances that your website will maintain the same style and sizes throughout are much higher. If everything's linkes it's harder for one small part to get out of whack.<br>
+              <br><b>Efficiency</b>-Any time you can cut out repitition, meanial tasks, time wasters, etc. you will save time, and we all know that time is money.
+            </div>
+        <br></div> <!-- stage 1 unit 3 closer -->
+  </div> <!-- stage 1 closer -->
+  <div class="stage2"> <!-- stage 2 opener -->
+          <div class="stage2unit1"> <!-- stage 2 unit 1 opener -->
+              <div class="stage2unit1lesson1"> <!-- stage 2 unit 1 lesson 1 opener -->
+              <h2>Stage 2 Unit 1: Telling Computers What To Do</h2>
+             <a id="unit21"></a>   
+            <div class="lesson-title"><h3>Computers and Programming</h3>
+            </div>
+              <div class="lesson-contents"> Computers are incredible tools that can calculate billions of digits in nanoseconds and although their potential is unlimited, without code they would be less usful than a toaster. Computers run on programs made up of code. These programs (written by programmers) are the core of computer sciences. Programs, or computations, need a very precise sequence of steps or actions to function properly, including correct spelling and grammar.
+              </div><br>
+  </div> <!-- stage 2 unit 1 lesson 1 closer -->
+              <div class="stage2unit1lesson2"> <!-- stage 2 unit 1 lesson 2 opener -->
+              <div class="lesson-title"><h3>Python</h3>
+              </div>
+              <div class="lesson-content">A programming language is what programmers use to tell a computer what to do. Python is one example of a programming language. Python is a "high-level" language that requires an interpreter program on it's way into the computer. An interpreter deciphers and executes the code and acts as a liason between Python and the computer. Python code is "run" or "executed" after its all written. Use "print (expression)" to see the result of the computation. Derive until terminal elements are all that's left. Terminal elements cannot be simplified. Python is a programming language. When you write Python code and press "Run", a <em>Python Interpreter</em> converts
+              the code you wrote as a set of instructions that the computer itself can understand and execute.
+              </div><br>
+                
+              </div> <!-- stage 2 unit 1 lesson 2 closer -->
+              <div class="stage2unit1lesson3"> <!-- stage 2 unit 1 lesson 3 opener -->
+              <div class="lesson-title"><h3>Python: Grammar and Expressions</h3></div>
+              <div class="lesson-contents">
+              <b>Python Grammar for Arithmetic Expressions:</b><br><br>
+              A Python "expression" is a legal Python statement. For example: <span class="code">print 1 + 1</span> is a valid expression, but <span class="code">print 1 +</span> (without a number at the end) is not.<br>
+              Expression &#8594; Expression Operation Expression <br>
+                   Expression &#8594; Number<br>
+                   Operator &#8594; <b>+,-,*,/</b><br>
+                   Number &#8594; <b>0,1,2,etc.</b>   
+                   <br>*Bold Denotes Terminal Values<br><br>
+                   <a href="https://www.udacity.com/course/viewer#!/c-ud552-nd/l-3527838955/e-48704311/m-48736065" target="_blank">This video</a> does a good job of explaining the Python grammar for "expressions".<br>
+                </div>
+              
+          </div> <!-- stage 2 unit 1 lesson 3 closer -->
+          </div> <!-- stage 2 unit 1 closer -->
+          <div class="stage2unit2"> <!-- stage 2 unit 2 opener -->
+              <div class="stage2unit2lesson1"> <!-- stage 2 unit 2 lesson 1 opener -->
+               <a id="unit22"></a>
+            <h2>Stage 2 Unit 2: Variables in Python</h2>
+              <div class="lesson-title"><h3>What is a <b>Variable</b>?</h3>
+             </div>
+              <div class="lesson-content"> Variables give programmers a way to give names to values. In Python, you can create a name to take the place of a number or variable by using an assignment statement. (name=expression) so (speed_of_light = 299792458) means when we print speed_of_light, 299792458 will come out. Variable can be invaluable when building complex systems or tracking data. They improve code readability by using names that make sense to humans. They give us a way to store the value of important data. They give us a way to change the value of something (like in the line days = days-1 If my_variable is a variable with a value of 2, then the following code would print out 4: print my_variable + my_variable
+              <br>
+              </div><br>
+              </div> <!-- stage 2 unit 2 lesson 1 closer -->
+              <div class="stage2unit2lesson2"> <!-- stage 2 unit 2 lesson 2 opener -->
+              <div class="lesson-title"><h3>Assigning a Variable</h3>
+              </div>
+              <div class="lesson-content">In the line 2 + 3 = 5, the equals sign means "is the same as". In the line my_variable = 5, the equals sign means "takes the value of". It may start counting up or down, or could do something sifferent all together based on the process. You can assign any name to a variable containing <em>letters, numbers</em>, or <em>underscores</em> so long as the first character is NOT a number. We can assign the value 2 to the variable my_variable by writing code like this: my_variable = 2 We can even change the value of a variable by re-assigning it to a different value later. 
+              </div>
+              <br>
+              </div> <!-- stage 2 unit 2 lesson 2 closer -->
+              <div class="stage2unit2lesson3"> <!-- stage 2 unit 2 lesson 3 opener -->
+              <div class="lesson-title"><h3>Numbers and Quotations</h3>
+              </div>
+              <div class="lesson-content">2 + 2 = 4  whereas '2'+'2'= 22<br>
+                Anything in quotations is listed in succession, not solved mathmatically. <br><br>
+              </div>
+              </div> <!-- stage 2 unit 2 lesson 3 closer -->
+          </div> <!-- stage 2 unit 2 closer -->
+          <div class="stage2unit3"> <!-- stage 2 unit 3 opener -->
+              <div class="stage2unit3lesson1"> <!-- stage 2 unit 3 lesson 1 opener -->
+               <a id="unit23"></a>
+            <h2>Stage 2 Unit 3: Functions in Python</h2>
+              <div class="lesson-title"><h3>What is a <b>Function</b>?</h3>
+             </div>
+                <div class="lesson-content">A function is something that takes <em>input</em>, does something to that input, and then produces <em>output</em>. For example, a function named "square" might take a number as input and produce the square of that number as output. 
+              </div><br>
+              </div> <!-- stage 2 unit 3 lesson 1 closer -->
+              <div class="stage2unit3lesson2"> <!-- stage 2 unit 3 lesson 2 opener -->
+              <div class="lesson-title"><h3>Making vs Using</h3>
+              </div>
+              <div class="lesson-content">  Functions are made by starting a line of code with the keyword <b>def </b>and then giving a function name followed by the function parameters in parentheses. These parameters will eventually be replaced by actual values when the function is used (called).In the "body" of the function, we write the code that specifies what to do with the input parameters. For example the following code could be the definition of a function called "square":<br><br>
+                <b>def</b> square(x):<br>
+                     answer = x * x <br>
+                <b>return</b> answer<br><br>
+                To call a function, we write the name of the function followed by the value(s) we want to give it in parentheses. Like this: <br> <b>print</b> square(4)<br> which will replace the "x" in the definition with the value we've input. 
+                
+              </div>
+              <br>
+              </div> <!-- stage 2 unit 3 lesson 2 closer -->
+              <div class="stage2unit3lesson3"> <!-- stage 2 unit 3 lesson 3 opener -->
+              <div class="lesson-title"><h3>Importance of Functions</h3>
+              </div>
+              <div class="lesson-content">Functions are crucial in helping programmers avoid repitition. Not only can you automate a process, but once you define a program it saves it so you don't have to redefine programs over and over. Complex systems can be built on a series of simple functions. <br><br>
+              </div>
+              </div> <!-- stage 2 unit 3 lesson 3 closer -->
+              <div class="stage2unit3lesson4"> <!-- stage 2 unit 3 lesson 4 opener -->
+              <div class="lesson-title"><h3>Anatomy of a 'Function Definition'</h3>
+              </div>
+              <div class="lesson-content">
+                <u>On the first line of your function definition</u> you must begin the line with<br> "<b>def</b> (lowercase)"<br>
+                          After def you must give a function name <br>
+                          "<b>def</b> function_name (a,b):"<br>
+                          Next, you must have a set of parentheses with the required parameters inside.
+                          The line must end with a : colon. <br><br>
+                          <u>In the body of the function</u> every line in the function must be indented.<br>
+                          
+                          If you want your function to produce output, it must end with a <b>return</b> statement.<br> <br>
+
+                          <u>To "call" the function...</u><br>
+
+                          <em>"Calling"</em> a function just means using it. You do this by writing:<br>
+
+                          <b>print</b>function_name (x,y) <-- with input><br><br>
+              </div>
+              </div> <!-- stage 2 unit 3 lesson 4 closer -->
+              <div class="stage2unit3lesson5"> <!-- stage 2 unit 3 lesson 5 opener -->
+                <div class="lesson-title"><h3>Decision and Repitition: <b>If</b> and <b>While</b> Statements</h3>
+              </div>
+              <div class="lesson-content">In most computer programming languages, a while loop is a control flow statement that allows code to be executed repeatedly based on a given boolean (T/F) condition. The while loop can be thought of as a repeating if statement.<br><br>
+
+                The <em>while</em> construct consists of a block of code and a condition/expression.The condition/expression is evaluated, and if the condition/expression is true, the code within the block is executed. This repeats until the condition/expression becomes false. Because the whileloop checks the condition/expression before the block is executed, the control structure is often also known as a pre-test loop.
+                <br><br>
+                <b>while</b>(example_name):  <br>
+                (code or other comlicated things)<br>
+                <b>if</b> (break_test):<br>
+                break, move on
+
+                
+                <br><br>
+              </div>
+              </div> <!-- stage 2 unit 3 lesson 5 closer -->
+          </div> <!-- stage 2 unit 3 closer -->
+          <div class="stage2unit4"> <!-- stage 2 unit 4 opener -->
+            <h2>Stage 2 Unit 4: Structured Data: Lists and For Loops</h2> 
+              <div class="stage2unit4lesson1"> <!-- stage 2 unit 4 lesson 1 opener -->
+               <a id="unit24"></a>
+              <div class="lesson-title"><h3>Strings vs Lists</h3>
+             </div>
+                <div class="lesson-content"> 
+                  <b>String</b> - sequence of characters surrounded by single or double quotes. Can be stored in a variable by using an assignment.<br>
+                  "<string name> = ‘expression'"<br> <br>
+                  <b>List</b> - sequence of anything (characters, strings, numbers, even other lists) surrounded by square brackets and elements are separated by commas. Can be stored in variables by using assignment. <br>"<list name> = [<expression>, <expression>, <expression>, etc.]" <br> Lists support <em>mutation.</em>
+              </div><br>
+              </div> <!-- stage 2 unit 4 lesson 1 closer -->
+              <div class="stage2unit4lesson2"> <!-- stage 2 unit 4 lesson 2 opener -->
+              <div class="lesson-title"><h3>Nested Lists</h3>
+              </div>
+              <div class="lesson-content">
+                Nested Lists - lists can contain many different elements, including other lists. For example, a list ontaining sub-lists of the Beatles and their corresponding birth years would look likt this:<br>
+                beatles = [ [‘John’, 1940], [‘Paul’, 1942],
+                          [‘George’, 1943], [‘Ringo’, 1940] ]<br>
+                And we can extract the information like this: <br>
+print beatles [3] = [‘Ringo’ , 1940] <br> OR <br>
+print beatles [3][0] = Ringo <br> OR <br>
+print beatles [3][1] = 1940 <br><br>
+
+Great resource video for nested lists: https://www.udacity.com/course/viewer#!/c-ud552-nd/l-3531748835/m-48734094
+                </div><br>
+              </div> <!-- stage 2 unit 4 lesson 2 closer -->
+              <div class="stage2unit4lesson3"> <!-- stage 2 unit 4 lesson 3 opener -->
+              <div class="lesson-title"><h3>Mutation & Aliasing</h3>
+              </div>
+                <div class="lesson-content"><b>Mutation</b> means that we can change the value of a list after we’ve created it, modifying the existing object. With a string we can only create new strings with different values, not modify the original string.With lists we can use mutation to change the value of the list to replace the list without creating new elements. <br>
+                  <b>Aliasing</b> means we have multiple ways to refer to the same object. (i.e. James Bond, 007) <br>
+                James Bond = 007 <br>
+                Any change in the object that the value ‘James Bond’ refers to also changes the value of ‘007’ because they are different names for the same object. <br>
+                <br>
+                Here’s a good video explaining mutation and aliasing: https://www.udacity.com/course/viewer#!/c-ud552-nd/l-3531748835/m-48532662
+              </div>
+              </div> <!-- stage 2 unit 4 lesson 3 closer -->
+              <div class="stage2unit4lesson4"> <!-- stage 2 unit 4 lesson 4 opener -->
+              <div class="lesson-title"><h3>Plus vs Append</h3>
+              </div>
+                <div class="lesson-content"><b>Append</b> - will allow us to add a new element at the end of the list. Like a procedure but it’s a method, use it similarly to .find.<br>
+                <listname>.append(<element>) <br>Mutating the list, not creating a new one. For example:<br>
+                stooges = [“Moe’, ‘Larry’, ‘Curly’] <br>
+                stooges.append (‘Shemp’) <br>
+                print stooges = [“Moe’, ‘Larry’, ‘Curly’]<br>
+                  <br><b>Plus</b> (+) doesn't change the value of the list, it modifies and creates a whole new list.<br> 
+<list> + <list> = [list, list]
+                
+              </div>
+              </div> <!-- stage 2 unit 4 lesson 4 closer -->
+              <div class="stage2unit4lesson5"> <!-- stage 2 unit 4 lesson 5 opener -->
+                <div class="lesson-title"><h3>Length (len)</h3>
+              </div>
+                <div class="lesson-content"><b>Len (length)</b><br>
+                len(<list or string or etc.>)<br>
+                Output of len is equal to the number of elements in the object. Counts lists, not characters. 
+                len([0,1]) = 2
+                len([‘a’, [‘b’,[’c’]]]) = 2 (only shows number of elements)
+
+                <br><br>
+              </div>
+              </div> <!-- stage 2 unit 4 lesson 5 closer -->
+              <div class="stage2unit4lesson6"> <!-- stage 2 unit 4 lesson 6 opener -->
+                <div class="lesson-title"><h3>For Loops</h3>
+              </div>
+                <div class="lesson-content"><b>For Loops</b>are an easier way to loop through elements of a list than  the ‘while loop’ <br>
+                  for <name> in <list>:<br>
+                     <block><br>
+                     <br>
+                     def print_all_elements(p)<br>
+                      for e in p:<br>
+                      print e<br>
+                      e will refer to the first element, loop around, refer to the second element, loop around, etc. until it’s finished. <br>
+
+                <br><br>
+              </div>
+              </div> <!-- stage 2 unit 4 lesson 6 closer -->
+               <div class="stage2unit4lesson7"> <!-- stage 2 unit 4 lesson 7 opener -->
+                <div class="lesson-title"><h3>Indexing</h3>
+              </div>
+                 <div class="lesson-content"><b>Indexing</b><br><list>.index(<value>)<br>
+                    The index method is invoked on a list. You pass in a value and the return is the position of that value in the list. No value found equals error, not -1. Always returns the first place in the list that the value is found, otherwise produces and error. <br> <br>
+
+                   <b>Using ‘in’ in index</b><br>
+                      <value>in<list><br>
+                      “is 3 in the list?”<br>
+                       print 3 in p<br>
+                       If <value> is in the <list>, output is True, otherwise output is false.<br>
+                       You can also use ‘not in’ for opposite effect<br>
+                <br><br>
+              </div>
+              </div> <!-- stage 2 unit 4 lesson 7 closer -->
+          </div> <!-- stage 2 unit 4 closer -->
+  </div> <!-- stage 2 closer -->
+</body><!-- body closer -->
